@@ -1,0 +1,107 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.preloader.hide { display: none; }
+
+
+/*=== Spinner ===*/
+
+.preloader .spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    border: 8px solid #fff;
+    border-top-color: #fec73f;
+    border-radius: 50%;
+    animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+/*=== Spinner 1 ===*/
+
+.preloader .spinner-1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+}
+
+.preloader .spinner-1 span {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #00b9ff;
+    border-radius: 50%;
+    animation: 1s spin-1  infinite linear;
+}
+
+.preloader .spinner-1 span:nth-child(1) {
+    animation-delay: 0s;
+    top: -3px;
+    left: 15px;
+}
+
+.preloader .spinner-1 span:nth-child(2) {
+    animation-delay: 0.1s;
+    top: 2px;
+    left: 28px;
+}
+
+.preloader .spinner-1 span:nth-child(3) {
+    animation-delay: 0.2s;
+    top: 15px;
+    left: 33px;
+}
+
+.preloader .spinner-1 span:nth-child(4) {
+    animation-delay: 0.3s;
+    top: 28px;
+    left: 28px;
+}
+
+.preloader .spinner-1 span:nth-child(5) {
+    animation-delay: 0.4s;
+    top: 33px;
+    left: 15px;
+}
+
+.preloader .spinner-1 span:nth-child(6) {
+    animation-delay: 0.5s;
+    top: 28px;
+    left: 2px;
+}
+
+.preloader .spinner-1 span:nth-child(7) {
+    animation-delay: 0.6s;
+    top: 15px;
+    left: -3px;
+}
+
+.preloader .spinner-1 span:nth-child(8) {
+    animation-delay: 0.7s;
+    top: 2px;
+    left: 2px;
+}
+
+@keyframes spin-1 {
+    0%, 20%, 80%, 100% { transform: scale(1); }
+    50% { transform: scale(1.7); }
+}
