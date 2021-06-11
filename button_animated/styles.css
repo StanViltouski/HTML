@@ -1,0 +1,40 @@
+body { font-family: Arial, sans-serif; }
+
+.btn {
+    padding: 0;
+    width: 320px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    background-color: coral;
+}
+
+.btn span {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.animation:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 10%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: skewX(-45deg);
+}
+
+.animation:hover:after { animation: move-light 1.4s; }
+
+@keyframes move-light {
+    from { left: -50%; }
+    to { left: 150%; }
+}
