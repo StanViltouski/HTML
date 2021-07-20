@@ -1,3 +1,22 @@
+
+/*=== Example ===*/
+
+/*@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fonts/bebasneuethin.eot');                                      !* IE9 Compat Modes *!
+    src: url('fonts/bebasneuethin.eot?#iefix') format('embedded-opentype'),   !* IE6-IE8 *!
+    url('fonts/bebasneuethin.woff') format('woff2'),                          !* Pretty Modern Browsers *!
+    url('fonts/bebasneuethin.woff') format('woff'),
+    url('fonts/bebasneuethin.ttf')  format('truetype');                       !* Safari, Android, iOS *!
+    url('fonts/bebasneuethin.svg') format('svg');                             !* Legacy iOS *!
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}*/
+
+
+/*=== Fonts include ===*/
+
 @font-face {
     font-family: 'Bebas Neue';
     src: local('Bebas Neue Thin'), local('BebasNeue-Thin'),
@@ -5,6 +24,7 @@
          url('fonts/bebasneuethin.woff') format('woff'),
          url('fonts/bebasneuethin.ttf') format('truetype');
     font-weight: 100;
+    font-display: swap;
     font-style: normal;
 }
 
@@ -15,6 +35,7 @@
          url('fonts/bebasneuelight.woff') format('woff'),
          url('fonts/bebasneuelight.ttf') format('truetype');
     font-weight: 200;
+    font-display: swap;
     font-style: normal;
 }
 
@@ -25,6 +46,7 @@
          url('fonts/bebasneuebook.woff') format('woff'),
          url('fonts/bebasneuebook.ttf') format('truetype');
     font-weight: 300;
+    font-display: swap;
     font-style: normal;
 }
 
@@ -35,6 +57,7 @@
          url('fonts/bebasneueregular.woff') format('woff'),
          url('fonts/bebasneueregular.ttf') format('truetype');
     font-weight: 400;
+    font-display: swap;
     font-style: normal;
 }
 
@@ -45,6 +68,7 @@
          url('fonts/bebasneuebold.woff') format('woff'),
          url('fonts/bebasneuebold.ttf') format('truetype');
     font-weight: 700;
+    font-display: swap;
     font-style: normal;
 }
 
